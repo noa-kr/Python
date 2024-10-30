@@ -70,10 +70,12 @@ for x in range(12):
 # Job 9
 print("Job 9")
 
-print("Nombres impairs : ")
-for x in range(1, 31, 2):
-    print(x)
-
-print("Nombres pairs : ")
-for x in range(2, 31, 2):
-    print(x)
+pair = []
+impair = []
+for x in range(1, 31):
+    if x % 2 == 0:
+        pair.append(x)
+    else:
+        impair.append(x)
+print(f"Nombres pairs: {pair}")
+print(f"Nombres impairs: {impair}")
